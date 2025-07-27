@@ -6,92 +6,92 @@ if "selected_option" not in st.session_state:
     st.session_state.selected_option = None
 
 # Set background image
-def set_bg():
-    with open(r"C:\Users\B A DHIVYA DHARUNA\Downloads\Echo Sage AI\streamlit\Background pic.jpg", "rb") as img_file:
-        encoded = base64.b64encode(img_file.read()).decode()
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("data:image/jpg;base64,{encoded}");
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-        }}
+#def set_bg():
+#    with open(r"C:\Users\B A DHIVYA DHARUNA\Downloads\Echo Sage AI\streamlit\Background pic.jpg", "rb") as img_file:
+#        encoded = base64.b64encode(img_file.read()).decode()
+#    st.markdown(
+#        f"""
+#        <style>
+#        .stApp {{
+#            background-image: url("data:image/jpg;base64,{encoded}");
+#            background-size: cover;
+#            background-attachment: fixed;
+#            background-position: center;
+#        }}
 
-        .main-container {{
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 3rem;
-            margin: 2rem auto;
-            max-width: 800px;
-            color: white;
-        }}
+#        .main-container {{
+#            background: rgba(0, 0, 0, 0.5);
+#            backdrop-filter: blur(10px);
+#            border-radius: 15px;
+#            padding: 3rem;
+#            margin: 2rem auto;
+#            max-width: 800px;
+#            color: white;
+#        }}
 
-        .glass-panel {{
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border-radius: 20px;
-            padding: 2rem;
-            margin-top: 2rem;
-            color: white;
-        }}
+#        .glass-panel {{
+#            background: rgba(255, 255, 255, 0.1);
+#            border: 1px solid rgba(255, 255, 255, 0.2);
+#            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+#            backdrop-filter: blur(15px);
+#            -webkit-backdrop-filter: blur(15px);
+#            border-radius: 20px;
+#            padding: 2rem;
+#            margin-top: 2rem;
+#            color: white;
+#        }}
 
-        .try-btn {{
-            background: violet;
-            color: black;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 30px;
-            font-weight: bold;
-            margin-top: 2rem;
-            cursor: pointer;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            transition: all 0.3s;
-        }}
+#        .try-btn {{
+#            background: violet;
+#            color: black;
+#            border: none;
+#            padding: 0.75rem 1.5rem;
+#            border-radius: 30px;
+#            font-weight: bold;
+#            margin-top: 2rem;
+#            cursor: pointer;
+#            display: block;
+#            margin-left: auto;
+#            margin-right: auto;
+#            transition: all 0.3s;
+#        }}
 
-        .try-btn:hover {{
-            transform: translateY(-3px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            background: white;
-            color: black;
-        }}
+#        .try-btn:hover {{
+#            transform: translateY(-3px);
+#            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+#            background: white;
+#            color: black;
+#        }}
 
-        .button-row {{
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }}
+#        .button-row {{
+#            display: flex;
+#            justify-content: center;
+#            gap: 1rem;
+#            margin-bottom: 2rem;
+#        }}
 
-        .feature-btn {{
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 10px;
-            padding: 1.5rem;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: bold;
-            color: white;
-        }}
+#        .feature-btn {{
+#            background: rgba(255, 255, 255, 0.1);
+#            border: 1px solid rgba(255, 255, 255, 0.3);
+#            border-radius: 10px;
+#            padding: 1.5rem;
+#            text-align: center;
+#            cursor: pointer;
+#            transition: all 0.3s ease;
+#            font-weight: bold;
+#            color: white;
+#        }}
 
-        .feature-btn:hover {{
-            background: rgba(238,130,238,0.6);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
-            color: white;
-            outline: 2px solid white;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
+#        .feature-btn:hover {{
+#            background: rgba(238,130,238,0.6);
+#            transform: translateY(-5px);
+#            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+#            color: white;
+#            outline: 2px solid white;
+#        }}
+#        </style>
+#        """,
+#        unsafe_allow_html=True
     )
 
 set_bg()
