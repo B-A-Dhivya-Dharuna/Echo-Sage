@@ -1,6 +1,5 @@
 requests==2.31.0
 streamlit==1.32.2
-streamlit-lottie==0.0.5
 python-docx==0.8.11
 PyPDF2==3.0.1
 scikit-learn==1.4.1
